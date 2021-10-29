@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PCM5X3K68H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PCM5X3K68H');
+</script>
+
+<style>
+    .container-fluid1{
+      padding: 300px 0;
+      background-size: cover;
+	    background-repeat:no-repeat;
+	    background-position: 55%;
+	    background-image:url("mountain1.jpg");
+    }
+
+    .form-row{
+        margin-top:50px;
+    }
+
+    .container-fluid{
+        height: 200px;
+    }
+
+    #kreni{
+        margin-top: 20px;
+    }
+    
+    .container-fluid2{
+      text-align: left;
+      position: absolute;
+      margin-top: 5%;
+      margin-left: 5%;
+      color: white;
+    }
+
+    .lokacija{
+      position: absolute;
+      margin-top: -90px;
+      margin-left: 90px;
+       }
+
+       footer{
+	opacity:85%;
+	background-image:url("stamps.jpg");
+}
+
+  #ponuda_himalaja{
+   display: none;
+
+  }
+
+  .container img{
+    text-align: center;
+    height: 100%;
+    width:100%;
+  }
+
+  #ponuda_everest{
+    display: none;
+  }
+</style>
+
+<title> Putnička Agencija Bon Voyage</title>
+<meta name="description" content="Zaljubljenik ste u planinarenje? Od Himalaja pa sve do Alpa u ponudi vam nudi naša agencija. Putovanje je udaljeno sa samo jednim klikom">
+<link rel="shortcut icon" type="image/png" href="favicon-32x32-pravi.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar fixed-top navbar-dark bg-dark" style="opacity:80%" >
+		<a class="navbar-brand" href="Index.html">Bon Voyage</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		  <ul class="navbar-nav">
+		  <li class="nav-item active">
+			  <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+		  </ul>
+		  <ul class="navbar-nav w-100 justify-content-end">
+			<li class="nav-item">
+			  <a class="nav-link" href="Index.html">Ponuda</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="O_Nama.html">O Nama</a>
+			</li>
+		  </ul>
+		</div>
+	  </nav>
+
+      <div class="container-fluid1">
+        <div class="container-fluid2">
+          <img src="location_white.png" class="lokacija" height="70" width="70" alt="lokacija-kona">
+          <h1>Doživite avanturu <br>kao ni jednu drugu</h1>
+          <h3>Putujte sa nama</h3>
+        </div>
+      </div>
+      <div class="container-fluid border border-primary">
+      <form>
+      <div class="form-row">
+        <div class="col">
+        <label for="destinacije" class="mr-2">Destinacije: </label>
+        <select  id="destinacije" class="col-md-7">
+      <option value="1">Himalaja</option>
+      <option value="2">Mount Everest</option>
+      <option value="3">K12</option>
+      <option value="4">Učka</option>
+      <option value="5">Alpe</option>
+    </select>
+        </div>
+      <div class="col"> 
+        <label for="number" class="mr-2">Broj osoba:</label>
+        <input type="number" id="quantity" class="col-md-7" name="quantity" placeholder="0" min="0" max="50">
+      </div> 
+        <div class="col">
+        <label for="start" class="mr-2">Datum polaska: </label>
+        <input type="date" id="start" name="trip-start" class="col-md-7"
+            value="2021-06-1"
+            min="2021-06-01">
+        </div>
+        <div class="col">
+         <label for="end" class="mr-2">Datum odlaska: </label>
+        <input type="date" id="end" name="trip-end" class="col-md-7"
+            value="2021-06-1"
+            min="2021-06-01">
+      </div>
+    </div>
+    <div class="col">
+      <button type="button" id="kreni" class="btn btn-primary btn-lg btn-block" onclick="odabir()">Kreni</button>
+    </div>
+    </form>
+</div>
+<div class="container" id="ponuda_himalaja">
+<h1>Himalaje</h1>
+<img src="Himalaje.jpg" class="img_fluid" alt="himalaje">
+<p> Himalaje su dom najviših svjetskih vrhova, uključujući svih 14 svjetskih vrhova viših od 8.000 metara, ali i stotine drugih vrhova viših od 7.200 m.</p>
+<p> Sastoji se od tri paralelna bila koja se strmo, u obliku luka, spuštaju prema Indo-gangeskoj nizini. Najsjeverni pojas (Visoka Himalaja) obuhvaća najviše i najstarije dijelove; veći broj vrhunaca (pretežno u Nepalu) prelazi 8000 m, a od njih je najviši Mount Everest. Središnji planinski pojas (Niska Himalaja) s prosječnom visinom 3000–4000 m u Nepalu ponegdje doseže 6000 m. Najjužniji i najmlađi pojas od 700–1000 m predstavlja prijelaz prema Indo-gangeskoj nizini. Gorje varira u širini od 400 km na zapadu do 150 kmna istoku.</p>
+<h2>Cijena 1000kn</h2>
+<p>Prava sitnica</p>
+<p>ALL inclusive</br>Smještaj u TOP hotelima</br> Šta čekate?<p>
+</div>
+<div class="container" id="ponuda_everest">
+  <h1>Mount Everest</h1>
+  <img src="mount_everrest.jpg" class="img_fluid" alt="everest">
+  <p>Najviša je planina na Zemlji i najviša točka na zemaljskoj kontinentalnoj kori, prema mjerenju visine topografskog vrhunca od 8848 metara iznad razine mora. Planina, koja je dio lanca Himalaje u Aziji, locirana je na granici između zone Sagarmatha u Nepalu, i autonomne regije Tibet u Kini.</p>
+  <p>Najviša planina na svijetu privlači penjače svih profila, od iskusnih planinara do početnika koji su spremni platiti znatne svote profesionalnim planinskim vodičima radi uspješnog uspona. Planina, premda ne postavlja znatne tehničke teškoće pri usponu na standardnoj ruti (drugi vrhunci iznad 8000 m visine kao K2 ili Nanga Parbat znatno su teži), ipak skriva mnoge opasnosti, kao visinska bolest, vremenske prilike i vjetar.</p>
+  <h2>Cijena 2000kn</h2>
+<p>Prava sitnica</p>
+<p>ALL inclusive</br>Smještaj u TOP hotelima</br> Šta čekate?<p>
+</div>
+<footer class="bg-dark text-center text-white">
+  <div class="container p-4">
+    <section class="mb-4">
+    
+    </section>
+
+    <section class="">
+    <form action="">
+  
+      <div class="row d-flex justify-content-center">
+
+      <div class="col-auto">
+        <p class="pt-2">
+        <strong>Pretplatite se za bolje ponude:</strong>
+        </p>
+      </div>
+    
+      <div class="col-md-5 col-12">
+  
+        <div class="form-outline form-white mb-4">
+        <input type="email" id="form5Example2" class="form-control" />
+        <label class="form-label" for="form5Example2">Email address</label>
+        </div>
+      </div>
+  
+  
+    
+      <div class="col-auto">
+        
+        <button type="submit" class="btn btn-outline-light mb-4"> 
+        Pretplati se
+        </button>
+      </div>
+    
+      </div>
+    
+    </form>
+    </section>
+  
+  
+
+    <section class="mb-4">
+    <p>
+      Dobrodošli u našu Putničku agenciju, jednu od boljih ako možemo zamjetiti. Imamo najvecu ponudu, sigurne avione a i sve to za malo para. Šta čekate? Rezervirajte i krenite na putovanje života!!!
+    </p>
+    </section>
+  
+    <section class="">
+
+    <div class="row">
+    
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      <h5 class="text-uppercase">Bon Voyage</h5>
+  
+      <ul class="list-unstyled mb-0">
+        <li>
+        <a href="Ribarenje-ponuda.html" class="text-white">Ribarenje</a>
+        </li>
+        <li>
+        <a href="Plaza-ponuda.html" class="text-white">Plaže</a>
+        </li>
+        <li>
+        <a href="Planinarenje-ponuda.html" class="text-white">Planine</a>
+        </li>
+        <li>
+        <a href="Setnja-ponuda.html" class="text-white">Šetnja</a>
+        </li>
+      </ul>
+    </div>	  
+    </div>
+    </section>
+  </div>
+  
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" >Digitalno Poslovanje</a>
+  </div>
+  </footer>
+  <script>
+    const kreni = document.querySelector(".btn");
+
+    function odabir(){
+      var x = document.getElementById("destinacije");
+      var user= x.options[x.selectedIndex].value;
+
+      if(user == 1){
+        document.getElementById("ponuda_everest").style= "display:none";
+        document.getElementById("ponuda_himalaja").style="display:block";
+      }else if(user == 2){
+      document.getElementById("ponuda_himalaja").style= "display:none";
+      document.getElementById("ponuda_everest").style= "display:block";
+    }else{
+      alert("nažalost Vaš odabir još nije u ponudi");
+      document.getElementById("ponuda_himalaja").style= "display:none";
+      document.getElementById("ponuda_everest").style= "display:none";
+    }
+
+    }
+
+
+  </script>
+</body>
